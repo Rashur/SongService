@@ -1,0 +1,20 @@
+bootRun {
+    enabled = false
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+dependencies {
+    implementation project(':repository')
+    api project(":interface")
+    implementation 'commons-io:commons-io:2.11.0'
+    implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.5.2.Final'
+    annotationProcessor "org.mapstruct:mapstruct-processor:1.5.2.Final"
+}
+

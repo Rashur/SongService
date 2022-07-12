@@ -1,0 +1,5 @@
+rootProject.name = 'SongService'
+include 'repository'
+include 'interface'
+include 'service'
+include 'web'
